@@ -1,0 +1,14 @@
+Button
+VBoxContainer
+Panel
+CanvasLayer
+NavigationAgent2D
+DirectionalLight2D
+AnimatedSprite2D
+CharacterBody2D
+NavigationRegion2D
+CollisionPolygon2D
+CollisionShape2D
+Area2D
+Node
+Label

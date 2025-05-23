@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlkjkfonl4dmv"]
+
+[ext_resource type="Texture2D" uid="uid://61nqa7da76om" path="res://SPRITES/Sprt/Sprite-0002.png" id="1_oowju"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no5k8"]
+atlas = ExtResource("1_oowju")
+region = Rect2(0, 0, 7, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mxgv"]
+atlas = ExtResource("1_oowju")
+region = Rect2(21, 0, 7, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi67w"]
+atlas = ExtResource("1_oowju")
+region = Rect2(7, 0, 7, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umn82"]
+atlas = ExtResource("1_oowju")
+region = Rect2(14, 0, 7, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ekwug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no5k8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mxgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi67w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umn82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no5k8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8mxgv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Candle" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ekwug")
+autoplay = "default"
+frame_progress = 0.547937
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.5
+max_distance = 60.0

@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://cespx8ns4gmjw"]
+
+[ext_resource type="Script" path="res://scene/levels/paus_menu/paus_menu.gd" id="1_l4phu"]
+
+[node name="PausMenu" type="CanvasLayer"]
+script = ExtResource("1_l4phu")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = -50.5
+offset_right = 84.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 169.0
+offset_bottom = 101.0
+
+[node name="Continue" type="Button" parent="Panel/VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+text = "ПРОДОВЖИТИ"
+
+[node name="Restart" type="Button" parent="Panel/VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+text = "ПОЧАТИ ЗНОВУ"
+
+[node name="Exit" type="Button" parent="Panel/VBoxContainer"]
+process_mode = 2
+layout_mode = 2
+text = "ВИЙТИ"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

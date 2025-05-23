@@ -1,0 +1,80 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1747961547
+export_presets.cfg::TextFile::-1::1747746440::0::1::::<><>::
+icon.svg::CompressedTexture2D::3294575677383607341::1737558611::1745493545::1::::<><>::
+::res://assets/::1745493545
+0x72_DungeonTilesetII_v1.7.png::CompressedTexture2D::808024321796548962::1738963031::1745493545::1::::<><>::
+::res://resources/::1747948176
+tile_set_1.tres::TileSet::7660714612240833377::1747948176::0::1::::<><>::uid://u1qjx6uua3ww::::res://SPRITES/dungeontileset-extended.png
+::res://scene/::1747750749
+::res://scene/enemies/::1747226146
+::res://scene/enemies/enemy_1/::1747949484
+enemy_1.gd::GDScript::-1::1747949435::0::1::::<>CharacterBody2D<>::
+enemy_1.tscn::PackedScene::5630067489175559056::1747949484::0::1::::<><>::res://scene/enemies/enemy_1/enemy_1.gd<>uid://dimcwxdq1fug3::::res://SPRITES/ExperimentZ #1/K4095/Attack.png<>uid://blbq2co05y5sq::::res://SPRITES/ExperimentZ #1/K4095/Idle.png<>uid://iko2hpd2nb7i::::res://SPRITES/ExperimentZ #1/K4095/Move.png<>uid://cmwjgl2lg0atb::::res://SPRITES/ExperimentZ #1/K4095/Death.png
+::res://scene/enemies/enemy_2/::1747949484
+enemy_2.gd::GDScript::-1::1747405781::0::1::::<>CharacterBody2D<>::
+enemy_2.tscn::PackedScene::1775999080731584118::1747949484::0::1::::<><>::uid://dpeo6w7lf4hya::::res://SPRITES/ExperimentZ #1/Q3417/Attack.png<>res://scene/enemies/enemy_2/enemy_2.gd<>uid://qouw007ytp65::::res://SPRITES/ExperimentZ #1/Q3417/Death.png<>uid://bjbhbjnh1oxa6::::res://SPRITES/ExperimentZ #1/Q3417/Idle.png<>uid://tk1diwdvrutx::::res://SPRITES/ExperimentZ #1/Q3417/Move.png
+::res://scene/levels/::1738962715
+::res://scene/levels/1/::1747949484
+canvas_layer.gd::GDScript::-1::1746115720::0::1::::<>CanvasLayer<>::
+level_1.tscn::PackedScene::582666957655019547::1747949484::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>res://scene/levels/1/canvas_layer.gd
+::res://scene/objects/::1747949484
+candle.tscn::PackedScene::7952547704362720753::1747949484::0::1::::<><>::uid://61nqa7da76om::::res://SPRITES/Sprt/Sprite-0002.png
+::res://scene/player/::1747949484
+player.gd::GDScript::-1::1746717039::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::978597990314063135::1747949484::0::1::::<><>::res://scene/player/player.gd<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
+::res://SPRITES/::1747750838
+dungeontileset-extended.png::CompressedTexture2D::1458439495257067890::1747229919::1747229962::1::::<><>::
+::res://SPRITES/ExperimentZ #1/::1746132249
+::res://SPRITES/ExperimentZ #1/K4095/::1746132252
+Attack.png::CompressedTexture2D::7745707268117118144::1722556215::1746132252::1::::<><>::
+Death.png::CompressedTexture2D::5661081589305595087::1722556231::1746132252::1::::<><>::
+Idle.png::CompressedTexture2D::3161582157636129068::1722556174::1746132252::1::::<><>::
+Move.png::CompressedTexture2D::583053171987437316::1722556196::1746132252::1::::<><>::
+::res://SPRITES/ExperimentZ #1/Q3417/::1746132252
+Attack.png::CompressedTexture2D::8221258819630874852::1722546448::1746132252::1::::<><>::
+Death.png::CompressedTexture2D::1153177767277226832::1722546464::1746132252::1::::<><>::
+Idle.png::CompressedTexture2D::3020611952078700715::1722546389::1746132252::1::::<><>::
+Move.png::CompressedTexture2D::1355816260194415397::1722546424::1746132252::1::::<><>::
+::res://SPRITES/Sprt/::1747751066
+candleA_01.png::CompressedTexture2D::3554457329699871808::1586100601::1747750840::1::::<><>::
+candleA_02.png::CompressedTexture2D::2293095092688533661::1586100600::1747750840::1::::<><>::
+candleA_03.png::CompressedTexture2D::2985698114667517211::1586100599::1747750840::1::::<><>::
+candleA_04.png::CompressedTexture2D::6698386900087209143::1586100598::1747750840::1::::<><>::
+Sprite-0002.png::CompressedTexture2D::2230345917564342084::1747751064::1747751066::1::::<><>::
+::res://SPRITES/With Sword/::1745493669
+04 Stranded - Pack 4 back up-Death.png::CompressedTexture2D::2333606323784171370::1745493659::1745493668::1::::<><>::
+Sci-fi hero 64x65.png::CompressedTexture2D::3446903607024168141::1745493659::1745493669::1::::<><>::
+::res://SPRITES/With Sword/Buffs/::1745493668
+04 Stranded - Pack 4 back up-Buff.png::CompressedTexture2D::5690600490989052855::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Defence.png::CompressedTexture2D::1488530940810347199::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Flames.png::CompressedTexture2D::5135309722706261200::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Heal.png::CompressedTexture2D::3033188770287721968::1745493659::1745493668::1::::<><>::
+Buff sprites.png::CompressedTexture2D::8675314876919262937::1745493659::1745493668::1::::<><>::
+::res://SPRITES/With Sword/Down/::1745493668
+04 Stranded - Pack 4 back up-Chop Down.png::CompressedTexture2D::7136132039196653828::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Idle Down.png::CompressedTexture2D::5611956253498159854::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Move Down.png::CompressedTexture2D::6811816622339413160::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Roll Down.png::CompressedTexture2D::510760238061916627::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Run Down.png::CompressedTexture2D::1932063847495231104::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Slash Down.png::CompressedTexture2D::5984034019386904500::1745493659::1745493668::1::::<><>::
+::res://SPRITES/With Sword/Right Left/::1745933977
+Idle left right — копия.png::CompressedTexture2D::507506277186066266::1745933207::1745933210::1::::<><>::
+Idle left right.png::CompressedTexture2D::4696410596000357470::1745493659::1745493669::1::::<><>::
+R CHop — копия.png::CompressedTexture2D::1383483030851589655::1745933721::1745933722::1::::<><>::
+R CHop.png::CompressedTexture2D::3953840697951878627::1745493659::1745493669::1::::<><>::
+R move — копия.png::CompressedTexture2D::8374653602460919418::1745933209::1745933210::1::::<><>::
+R move.png::CompressedTexture2D::1491258842403529545::1745493659::1745493669::1::::<><>::
+R Roll — копия.png::CompressedTexture2D::837988542709782093::1745493659::1745933210::1::::<><>::
+R Roll.png::CompressedTexture2D::2989363210920795274::1745493659::1745493669::1::::<><>::
+R Run — копия.png::CompressedTexture2D::3978387140051789619::1745933209::1745933210::1::::<><>::
+R Run.png::CompressedTexture2D::6142568854465812874::1745493659::1745493669::1::::<><>::
+R Slash — копия.png::CompressedTexture2D::9039638578655044292::1745933976::1745933977::1::::<><>::
+R Slash.png::CompressedTexture2D::9114952611521658591::1745493659::1745493669::1::::<><>::
+::res://SPRITES/With Sword/Up/::1745493668
+04 Stranded - Pack 4 back up-Chop Up.png::CompressedTexture2D::3142431831729538174::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Idle Up.png::CompressedTexture2D::871009215021363941::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Move Up.png::CompressedTexture2D::7439242014679051962::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Roll Up.png::CompressedTexture2D::8901066088893674659::1745493659::1745493668::1::::<><>::
+04 Stranded - Pack 4 back up-Run UP.png::CompressedTexture2D::1932389534754030794::1745493659::1745493668::1::::<><>::
+attack slash up.png::CompressedTexture2D::9189779811064379688::1745493659::1745493668::1::::<><>::
