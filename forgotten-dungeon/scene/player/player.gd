@@ -1,7 +1,10 @@
+class_name Player
 extends CharacterBody2D
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var ui = get_tree().root.get_node("Level1/CanvasLayer")
+@export var ui: CanvasLayer
+@onready var collision_shape = $CollisionShape2D
+@onready var death_menu = get_node("../DeathMenu")
 
 @onready var up_attack1 = $up_attack1
 @onready var up_attack2 = $up_attack2
@@ -32,9 +35,12 @@ var stamina_recovery_delay = 1.5
 var time_since_last_stamina_use = 0
 var is_recovering_stamina = false
 
+var is_dead = false
+
 func _process(delta):
-	ui.update_stamina(stamina, max_stamina)
-	ui.update_health(health, max_health)
+	if ui:
+		ui.update_stamina(stamina, max_stamina)
+		ui.update_health(health, max_health)
 
 	if is_attacking:
 		return
@@ -137,23 +143,28 @@ func match_direction_idle(direction):
 		animated_sprite_2d.play("down_idle" if direction.y > 0 else "up_idle")
 
 func take_damage(amount: int):
-	print("Player takes damage: ", amount)
 	health -= amount
 	health = max(health, 0)
-	ui.update_health(health, max_health)
+	print("Player takes damage: ", amount, ", current health: ", health) # Додано для дебагу
+	if ui:
+		ui.update_health(health, max_health)
 	if health <= 0:
 		die()
 
 func die():
 	velocity = Vector2.ZERO
 	animated_sprite_2d.play("death")
+	collision_shape.call_deferred("set_disabled", true)
 	set_process(false)
 	set_physics_process(false)
+	is_dead = true
 
 func _on_animated_sprite_2d_animation_finished():
 	if is_attacking:
 		is_attacking = false
 		disable_all_attacks()
+	if is_dead and animated_sprite_2d.animation == "death":
+		death_menu.show_menu()
 
 func _on_down_attack_1_body_entered(body):
 	if body.is_in_group("enemies"):

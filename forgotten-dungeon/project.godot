@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Forgotten-Dungeon"
-run/main_scene="res://scene/levels/1/level_1.tscn"
+run/main_scene="res://scene/ui/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[debug]
+
+settings/stdout/print_fps=true
 
 [display]
 
@@ -27,6 +31,10 @@ window/stretch/mode="viewport"
 [dotnet]
 
 project/assembly_name="Forgotten-Dungeon"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
 
 [global_group]
 

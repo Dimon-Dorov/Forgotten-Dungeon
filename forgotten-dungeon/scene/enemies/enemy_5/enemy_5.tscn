@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch6tu0afcanyv"]
+
+[ext_resource type="Script" path="res://scene/enemies/enemy_5/enemy_5.gd" id="1_y7yk3"]
+
+[node name="Enemy5" type="CharacterBody2D" groups=["enemies"]]
+motion_mode = 1
+script = ExtResource("1_y7yk3")
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

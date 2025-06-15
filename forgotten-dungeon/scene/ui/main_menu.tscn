@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx3qgt2srb7ri"]
+
+[ext_resource type="Script" path="res://scene/ui/main_menu.gd" id="1_0nfv4"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_0nfv4")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Continue" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Продовжити гру"
+
+[node name="NewGame" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Почати нову гру"
+
+[node name="Exit" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Вийти з гри"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

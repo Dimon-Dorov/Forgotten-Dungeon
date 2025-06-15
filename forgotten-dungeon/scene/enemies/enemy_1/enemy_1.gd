@@ -54,13 +54,7 @@ func _ready():
 	patrol_area_center = patrol_area.global_position + patrol_area.position
 	spawn_position = global_position
 	original_sprite_position = animated_sprite.position
-
-	detection_area.body_entered.connect(_on_detection_area_body_entered)
-	detection_area.body_exited.connect(_on_detection_area_body_exited)
-	nav_agent.navigation_finished.connect(_on_navigation_finished)
-
 	call_deferred("set_new_patrol_target")
-
 	attack_area.monitoring = false
 	charge_attack_area.monitoring = false
 
@@ -69,27 +63,22 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 		move_and_slide()
 		return
-
 	if movement_blocked:
 		movement_block_timer -= delta
 		if movement_block_timer <= 0.0:
 			movement_blocked = false
-
 	if !can_attack:
 		attack_timer -= delta
 		if attack_timer <= 0:
 			can_attack = true
-
 	if !can_charge:
 		charge_timer -= delta
 		if charge_timer <= 0:
 			can_charge = true
-
 	if ready_to_charge:
 		state = "charging"
 		ready_to_charge = false
 		animated_sprite.play("charge_attack")
-
 	match state:
 		"patrolling":
 			patrol(delta)
@@ -107,7 +96,6 @@ func _physics_process(delta):
 			move_and_slide()
 		"charging":
 			charge_towards_player(delta)
-
 	if movement_blocked or state in ["attacking", "preparing_charge", "charging"]:
 		velocity = Vector2.ZERO
 	else:
@@ -117,7 +105,6 @@ func _physics_process(delta):
 			velocity = direction * move_speed
 		else:
 			velocity = Vector2.ZERO
-
 	move_and_slide()
 	update_animation()
 
@@ -188,7 +175,6 @@ func attack_player():
 func prepare_charge_attack():
 	if !player:
 		return
-
 	state = "preparing_charge"
 	charging = true
 	charge_direction = (player.global_position - global_position).normalized()
@@ -200,18 +186,15 @@ func prepare_charge_attack():
 func charge_towards_player(delta):
 	velocity = charge_direction * charge_speed
 	var collision_info = move_and_slide()
-
 	if jump_elapsed < jump_duration:
 		jump_elapsed += delta
 		var t = jump_elapsed / jump_duration
 		animated_sprite.position.y = original_sprite_position.y + jump_height * (1.0 - t)
 	else:
 		animated_sprite.position = original_sprite_position
-
 	if global_position.distance_to(charge_destination) < 10:
 		end_charge_attack()
 		return
-
 	for i in range(get_slide_collision_count()):
 		var collision = get_slide_collision(i)
 		if collision and !collision.get_collider().is_in_group("player"):

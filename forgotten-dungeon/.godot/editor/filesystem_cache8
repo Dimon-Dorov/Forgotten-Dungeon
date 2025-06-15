@@ -1,29 +1,168 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747961547
-export_presets.cfg::TextFile::-1::1747746440::0::1::::<><>::
+::res://::1749942280
+export_presets.cfg::TextFile::-1::1749709434::0::1::::<><>::
 icon.svg::CompressedTexture2D::3294575677383607341::1737558611::1745493545::1::::<><>::
+::res://addons/::1749897473
+::res://addons/gut/::1749897489
+autofree.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+awaiter.gd::GDScript::-1::1749585524::0::1::::<>Node<>::
+collected_script.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+collected_test.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+comparator.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+compare_result.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+diff_formatter.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+diff_tool.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+doubler.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+double_tools.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+dynamic_gdscript.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+gut.gd::GDScript::-1::1749585524::0::1::::GutMain<>Node<>::
+GutScene.gd::GDScript::-1::1749585524::0::1::::<>Node2D<>::
+GutScene.tscn::PackedScene::900020720033095020::1749585524::0::1::::<><>::res://addons/gut/GutScene.gd<>uid://duxblir3vu8x7::::res://addons/gut/gui/NormalGui.tscn<>uid://cnqqdfsn80ise::::res://addons/gut/gui/MinGui.tscn
+gut_cmdln.gd::GDScript::-1::1749585524::0::1::::<>SceneTree<>::
+gut_config.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+gut_loader.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+gut_loader_the_scene.tscn::PackedScene::672845236156175277::1749585524::0::1::::<><>::res://addons/gut/gut_loader_the_scene.gd
+gut_plugin.gd::GDScript::-1::1749585524::0::1::::<>EditorPlugin<>::
+gut_to_move.gd::GDScript::-1::1749585524::0::1::::<>Node<>::
+gut_vscode_debugger.gd::GDScript::-1::1749585524::0::1::::<>SceneTree<>::
+hook_script.gd::GDScript::-1::1749585524::0::1::::GutHookScript<>RefCounted<>::
+icon.png::CompressedTexture2D::3890841352431263106::1749585524::1749897489::1::::<><>::
+inner_class_registry.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+input_factory.gd::GDScript::-1::1749585524::0::1::::GutInputFactory<>RefCounted<>::
+input_sender.gd::GDScript::-1::1749585524::0::1::::GutInputSender<>RefCounted<>::
+junit_xml_export.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+lazy_loader.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+LICENSE.md::TextFile::-1::1749585524::0::1::::<><>::
+logger.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+method_maker.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+one_to_many.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+orphan_counter.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+parameter_factory.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+parameter_handler.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+plugin.cfg::TextFile::-1::1749585524::0::1::::<><>::
+printers.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+result_exporter.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+script_parser.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+signal_watcher.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+source_code_pro.fnt::FontFile::5125156706837925311::1749585524::1749897489::1::::<><>::
+spy.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+strutils.gd::GDScript::-1::1749585524::0::1::::GutStringUtils<>RefCounted<>::
+stubber.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+stub_params.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+summary.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+test.gd::GDScript::-1::1749585524::0::1::::GutTest<>Node<>::
+test_collector.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+thing_counter.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+UserFileViewer.gd::GDScript::-1::1749585524::0::1::::<>Window<>::
+UserFileViewer.tscn::PackedScene::3676575661945431583::1749585524::0::1::::<><>::res://addons/gut/UserFileViewer.gd
+utils.gd::GDScript::-1::1749585524::0::1::::GutUtils<>Object<>::
+version_conversion.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+version_numbers.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+warnings_manager.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+::res://addons/gut/cli/::1749897473
+change_project_warnings.gd::GDScript::-1::1749585524::0::1::::<>SceneTree<>::
+gut_cli.gd::GDScript::-1::1749585524::0::1::::<>Node<>::
+optparse.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+::res://addons/gut/double_templates/::1749897473
+function_template.txt::TextFile::-1::1749585524::0::1::::<><>::
+init_template.txt::TextFile::-1::1749585524::0::1::::<><>::
+script_template.txt::TextFile::-1::1749585524::0::1::::<><>::
+::res://addons/gut/fonts/::1749897489
+AnonymousPro-Bold.ttf::FontFile::7090493737101227053::1749585524::1749897489::1::::<><>::
+AnonymousPro-BoldItalic.ttf::FontFile::761724172175864::1749585524::1749897489::1::::<><>::
+AnonymousPro-Italic.ttf::FontFile::503495830806397342::1749585524::1749897489::1::::<><>::
+AnonymousPro-Regular.ttf::FontFile::6954778653853521719::1749585524::1749897489::1::::<><>::
+CourierPrime-Bold.ttf::FontFile::2896714378692211288::1749585524::1749897489::1::::<><>::
+CourierPrime-BoldItalic.ttf::FontFile::977220797652290018::1749585524::1749897489::1::::<><>::
+CourierPrime-Italic.ttf::FontFile::846855295635301556::1749585524::1749897489::1::::<><>::
+CourierPrime-Regular.ttf::FontFile::3314864826498090510::1749585524::1749897489::1::::<><>::
+LobsterTwo-Bold.ttf::FontFile::5632861098580159618::1749585524::1749897489::1::::<><>::
+LobsterTwo-BoldItalic.ttf::FontFile::3182965850633207044::1749585524::1749897489::1::::<><>::
+LobsterTwo-Italic.ttf::FontFile::7759867820021968437::1749585524::1749897489::1::::<><>::
+LobsterTwo-Regular.ttf::FontFile::2115948870915788183::1749585524::1749897489::1::::<><>::
+OFL.txt::TextFile::-1::1749585524::0::1::::<><>::
+::res://addons/gut/gui/::1749897489
+arrow.png::CompressedTexture2D::2222304255268796957::1749585524::1749897489::1::::<><>::
+BottomPanelShortcuts.gd::GDScript::-1::1749585524::0::1::::<>Window<>::
+BottomPanelShortcuts.tscn::PackedScene::3672212108687301338::1749585524::0::1::::<><>::uid://sfb1fw8j6ufu::::res://addons/gut/gui/ShortcutButton.tscn<>res://addons/gut/gui/BottomPanelShortcuts.gd
+editor_globals.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+GutBottomPanel.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+GutBottomPanel.tscn::PackedScene::4354655867367614688::1749585524::0::1::::<><>::res://addons/gut/gui/GutBottomPanel.gd<>uid://bsk32dh41b4gs::::res://addons/gut/gui/BottomPanelShortcuts.tscn<>uid://0yunjxtaa8iw::::res://addons/gut/gui/RunAtCursor.tscn<>uid://cr6tvdv0ve6cv::::res://addons/gut/gui/play.png<>uid://4gyyn12um08h::::res://addons/gut/gui/RunResults.tscn<>uid://bqmo4dj64c7yl::::res://addons/gut/gui/OutputText.tscn
+GutControl.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+GutControl.tscn::PackedScene::2054171664569605320::1749585524::0::1::::<><>::res://addons/gut/gui/GutControl.gd
+GutRunner.gd::GDScript::-1::1749585524::0::1::::<>Node2D<>::
+GutRunner.tscn::PackedScene::3560702166169920196::1749585524::0::1::::<><>::res://addons/gut/gui/GutRunner.gd<>uid://m28heqtswbuq::::res://addons/gut/GutScene.tscn
+GutSceneTheme.tres::Theme::6076084572326576944::1749585524::0::1::::<><>::uid://c6c7gnx36opr0::::res://addons/gut/fonts/AnonymousPro-Regular.ttf
+gut_config_gui.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+gut_gui.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+gut_user_preferences.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+MinGui.tscn::PackedScene::5719303499070539904::1749585524::0::1::::<><>::uid://cstkhwkpajvqu::::res://addons/gut/gui/GutSceneTheme.tres<>uid://bnh0lslf4yh87::::res://addons/gut/fonts/CourierPrime-Regular.ttf<>res://addons/gut/gui/gut_gui.gd<>uid://bvrqqgjpyouse::::res://addons/gut/gui/ResizeHandle.tscn
+NormalGui.tscn::PackedScene::8610600420658602210::1749585524::0::1::::<><>::uid://cstkhwkpajvqu::::res://addons/gut/gui/GutSceneTheme.tres<>res://addons/gut/gui/gut_gui.gd<>uid://bnh0lslf4yh87::::res://addons/gut/fonts/CourierPrime-Regular.ttf<>uid://bvrqqgjpyouse::::res://addons/gut/gui/ResizeHandle.tscn
+OutputText.gd::GDScript::-1::1749585524::0::1::::<>VBoxContainer<>::
+OutputText.tscn::PackedScene::3535116713792967483::1749585524::0::1::::<><>::res://addons/gut/gui/OutputText.gd<>uid://bnh0lslf4yh87::::res://addons/gut/fonts/CourierPrime-Regular.ttf
+panel_controls.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+play.png::CompressedTexture2D::6031238735318256293::1749585524::1749897489::1::::<><>::
+ResizeHandle.gd::GDScript::-1::1749585524::0::1::::<>ColorRect<>::
+ResizeHandle.tscn::PackedScene::3896481196255057096::1749585524::0::1::::<><>::res://addons/gut/gui/ResizeHandle.gd
+ResultsTree.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+ResultsTree.tscn::PackedScene::7970351583819098362::1749585524::0::1::::<><>::res://addons/gut/gui/ResultsTree.gd
+RunAtCursor.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+RunAtCursor.tscn::PackedScene::1805504221328301514::1749585524::0::1::::<><>::res://addons/gut/gui/RunAtCursor.gd<>uid://cr6tvdv0ve6cv::::res://addons/gut/gui/play.png<>uid://6wra5rxmfsrl::::res://addons/gut/gui/arrow.png
+RunResults.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+RunResults.tscn::PackedScene::2049363523129861965::1749585524::0::1::::<><>::res://addons/gut/gui/RunResults.gd<>uid://dls5r5f6157nq::::res://addons/gut/gui/ResultsTree.tscn
+run_from_editor.gd::GDScript::-1::1749585524::0::1::::<>Node2D<>::
+run_from_editor.tscn::PackedScene::2827842826880526284::1749585524::0::1::::<><>::res://addons/gut/gui/run_from_editor.gd
+script_text_editor_controls.gd::GDScript::-1::1749585524::0::1::::<>RefCounted<>::
+Settings.tscn::PackedScene::6291468949329504810::1749585524::0::1::::<><>::
+ShortcutButton.gd::GDScript::-1::1749585524::0::1::::<>Control<>::
+ShortcutButton.tscn::PackedScene::1273828520004261174::1749585524::0::1::::<><>::res://addons/gut/gui/ShortcutButton.gd
+::res://addons/gut/images/::1749897489
+Folder.svg::CompressedTexture2D::7694651741458501535::1749585524::1749897489::1::::<><>::
+green.png::CompressedTexture2D::3896279560051998512::1749585524::1749897489::1::::<><>::
+red.png::CompressedTexture2D::2443263267725858415::1749585524::1749897489::1::::<><>::
+Script.svg::CompressedTexture2D::4817060143842260657::1749585524::1749897489::1::::<><>::
+yellow.png::CompressedTexture2D::1043265824178416429::1749585524::1749897489::1::::<><>::
 ::res://assets/::1745493545
 0x72_DungeonTilesetII_v1.7.png::CompressedTexture2D::808024321796548962::1738963031::1745493545::1::::<><>::
-::res://resources/::1747948176
-tile_set_1.tres::TileSet::7660714612240833377::1747948176::0::1::::<><>::uid://u1qjx6uua3ww::::res://SPRITES/dungeontileset-extended.png
-::res://scene/::1747750749
-::res://scene/enemies/::1747226146
-::res://scene/enemies/enemy_1/::1747949484
-enemy_1.gd::GDScript::-1::1747949435::0::1::::<>CharacterBody2D<>::
-enemy_1.tscn::PackedScene::5630067489175559056::1747949484::0::1::::<><>::res://scene/enemies/enemy_1/enemy_1.gd<>uid://dimcwxdq1fug3::::res://SPRITES/ExperimentZ #1/K4095/Attack.png<>uid://blbq2co05y5sq::::res://SPRITES/ExperimentZ #1/K4095/Idle.png<>uid://iko2hpd2nb7i::::res://SPRITES/ExperimentZ #1/K4095/Move.png<>uid://cmwjgl2lg0atb::::res://SPRITES/ExperimentZ #1/K4095/Death.png
-::res://scene/enemies/enemy_2/::1747949484
-enemy_2.gd::GDScript::-1::1747405781::0::1::::<>CharacterBody2D<>::
-enemy_2.tscn::PackedScene::1775999080731584118::1747949484::0::1::::<><>::uid://dpeo6w7lf4hya::::res://SPRITES/ExperimentZ #1/Q3417/Attack.png<>res://scene/enemies/enemy_2/enemy_2.gd<>uid://qouw007ytp65::::res://SPRITES/ExperimentZ #1/Q3417/Death.png<>uid://bjbhbjnh1oxa6::::res://SPRITES/ExperimentZ #1/Q3417/Idle.png<>uid://tk1diwdvrutx::::res://SPRITES/ExperimentZ #1/Q3417/Move.png
-::res://scene/levels/::1738962715
-::res://scene/levels/1/::1747949484
+::res://resources/::1749917538
+tile_set_1.tres::TileSet::7660714612240833377::1749917538::0::1::::<><>::uid://u1qjx6uua3ww::::res://SPRITES/dungeontileset-extended.png
+::res://scene/::1749665386
+::res://scene/enemies/::1749684129
+::res://scene/enemies/enemy_1/::1749929174
+enemy_1.gd::GDScript::-1::1749703359::0::1::::<>CharacterBody2D<>::
+enemy_1.tscn::PackedScene::5630067489175559056::1749929174::0::1::::<><>::res://scene/enemies/enemy_1/enemy_1.gd<>uid://dimcwxdq1fug3::::res://SPRITES/ExperimentZ #1/K4095/Attack.png<>uid://blbq2co05y5sq::::res://SPRITES/ExperimentZ #1/K4095/Idle.png<>uid://iko2hpd2nb7i::::res://SPRITES/ExperimentZ #1/K4095/Move.png<>uid://cmwjgl2lg0atb::::res://SPRITES/ExperimentZ #1/K4095/Death.png
+::res://scene/enemies/enemy_2/::1749929174
+enemy_2.gd::GDScript::-1::1749703391::0::1::::<>CharacterBody2D<>::
+enemy_2.tscn::PackedScene::1775999080731584118::1749929174::0::1::::<><>::uid://dpeo6w7lf4hya::::res://SPRITES/ExperimentZ #1/Q3417/Attack.png<>res://scene/enemies/enemy_2/enemy_2.gd<>uid://qouw007ytp65::::res://SPRITES/ExperimentZ #1/Q3417/Death.png<>uid://bjbhbjnh1oxa6::::res://SPRITES/ExperimentZ #1/Q3417/Idle.png<>uid://tk1diwdvrutx::::res://SPRITES/ExperimentZ #1/Q3417/Move.png
+::res://scene/enemies/enemy_3/::1749929174
+enemy_3.gd::GDScript::-1::1749708472::0::1::::<>CharacterBody2D<>::
+enemy_3.tscn::PackedScene::1130804312115868923::1749929174::0::1::::<><>::uid://b17ajhhvs23jt::::res://SPRITES/ExperimentZ #4/001/Attack 1.png<>uid://c03vb1anclxmc::::res://SPRITES/ExperimentZ #4/001/Idle.png<>res://scene/enemies/enemy_3/enemy_3.gd<>uid://b6tqexjkln68k::::res://SPRITES/ExperimentZ #4/001/Attack 2.png<>uid://dhb7dhtuhqmld::::res://SPRITES/ExperimentZ #4/001/Attack 3.png<>uid://bqtvexvgre2yt::::res://SPRITES/ExperimentZ #4/001/Death.png<>uid://bcdgr8yv4wytb::::res://SPRITES/ExperimentZ #4/001/Walk.png
+::res://scene/enemies/enemy_4/::1749929174
+enemy_4.gd::GDScript::-1::1749708862::0::1::::<>CharacterBody2D<>::
+enemy_4.tscn::PackedScene::1625868921001961566::1749929174::0::1::::<><>::res://scene/enemies/enemy_4/enemy_4.gd<>uid://dkgf1k204f3rx::::res://SPRITES/ExperimentZ #15/attack.png<>uid://cwhmmy0aca5bh::::res://SPRITES/ExperimentZ #15/death.png<>uid://c0yaxf58gt445::::res://SPRITES/ExperimentZ #15/idle.png<>uid://sgi1sc4el2dj::::res://SPRITES/ExperimentZ #15/move.png
+::res://scene/enemies/enemy_5/::1749929174
+enemy_5.gd::GDScript::-1::1749687252::0::1::::<>CharacterBody2D<>::
+enemy_5.tscn::PackedScene::5329349635282561849::1749929174::0::1::::<><>::res://scene/enemies/enemy_5/enemy_5.gd
+::res://scene/levels/::1749665468
+::res://scene/levels/1/::1749929174
+level_1.gd::GDScript::-1::1749893052::0::1::::<>Node<>::
+level_1.tscn::PackedScene::582666957655019547::1749929174::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>res://scene/levels/1/level_1.gd<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://cespx8ns4gmjw::::res://scene/ui/paus_menu.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://drbyq4ib0v6io::::res://scene/ui/death_menu.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn<>uid://qd1ggf1sibl8::::res://scene/enemies/enemy_3/enemy_3.tscn<>uid://xft3acii6omw::::res://scene/enemies/enemy_4/enemy_4.tscn
+::res://scene/objects/::1748005730
+candle.tscn::PackedScene::7952547704362720753::1748005730::0::1::::<><>::uid://61nqa7da76om::::res://SPRITES/Sprt/Sprite-0002.png
+::res://scene/player/::1749929174
+player.gd::GDScript::-1::1749918639::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::978597990314063135::1749929174::0::1::::<><>::res://scene/player/player.gd<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
+::res://scene/ui/::1749929174
 canvas_layer.gd::GDScript::-1::1746115720::0::1::::<>CanvasLayer<>::
-level_1.tscn::PackedScene::582666957655019547::1747949484::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>res://scene/levels/1/canvas_layer.gd
-::res://scene/objects/::1747949484
-candle.tscn::PackedScene::7952547704362720753::1747949484::0::1::::<><>::uid://61nqa7da76om::::res://SPRITES/Sprt/Sprite-0002.png
-::res://scene/player/::1747949484
-player.gd::GDScript::-1::1746717039::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::978597990314063135::1747949484::0::1::::<><>::res://scene/player/player.gd<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
-::res://SPRITES/::1747750838
+canvas_layer.tscn::PackedScene::4174584598403392641::1749920142::0::1::::<><>::res://scene/ui/canvas_layer.gd
+death_menu.gd::GDScript::-1::1749708800::0::1::::<>CanvasLayer<>::
+death_menu.tscn::PackedScene::8356024086824081778::1749929174::0::1::::<><>::res://scene/ui/death_menu.gd
+experience_bar.tscn::PackedScene::8843809016819921683::1749708524::0::1::::<><>::
+main_menu.gd::GDScript::-1::1749669504::0::1::::<>CanvasLayer<>::
+main_menu.tscn::PackedScene::8832391259009418722::1749708524::0::1::::<><>::res://scene/ui/main_menu.gd
+paus_menu.gd::GDScript::-1::1747964313::0::1::::<>CanvasLayer<>::
+paus_menu.tscn::PackedScene::5091709123872570744::1749929174::0::1::::<><>::res://scene/ui/paus_menu.gd
+::res://SPRITES/::1749703623
 dungeontileset-extended.png::CompressedTexture2D::1458439495257067890::1747229919::1747229962::1::::<><>::
 ::res://SPRITES/ExperimentZ #1/::1746132249
 ::res://SPRITES/ExperimentZ #1/K4095/::1746132252
@@ -36,6 +175,34 @@ Attack.png::CompressedTexture2D::8221258819630874852::1722546448::1746132252::1:
 Death.png::CompressedTexture2D::1153177767277226832::1722546464::1746132252::1::::<><>::
 Idle.png::CompressedTexture2D::3020611952078700715::1722546389::1746132252::1::::<><>::
 Move.png::CompressedTexture2D::1355816260194415397::1722546424::1746132252::1::::<><>::
+::res://SPRITES/ExperimentZ #4/::1749684917
+::res://SPRITES/ExperimentZ #4/001/::1749685885
+Attack 1.png::CompressedTexture2D::4277407158013373709::1749685808::1749685885::1::::<><>::
+Attack 2.png::CompressedTexture2D::4602477851269018624::1749685777::1749685885::1::::<><>::
+Attack 3.png::CompressedTexture2D::7654597033383272025::1749685825::1749685885::1::::<><>::
+Death.png::CompressedTexture2D::3549948800025935839::1749685873::1749685885::1::::<><>::
+Idle.png::CompressedTexture2D::6586643244293582350::1749685639::1749685641::1::::<><>::
+Walk.png::CompressedTexture2D::2533387936023978631::1749685883::1749685885::1::::<><>::
+::res://SPRITES/ExperimentZ #4/002/::1749684919
+Attack 1.png::CompressedTexture2D::7865464848658095620::1723736932::1749684919::1::::<><>::
+Attack 2.png::CompressedTexture2D::5702336884242241415::1723736944::1749684919::1::::<><>::
+Attack 3.png::CompressedTexture2D::1980181423549745278::1723736964::1749684919::1::::<><>::
+Death.png::CompressedTexture2D::594406949875949357::1723736978::1749684919::1::::<><>::
+Idle.png::CompressedTexture2D::1597718361406834498::1723736905::1749684919::1::::<><>::
+Walk.png::CompressedTexture2D::8068354895361764266::1723736917::1749684919::1::::<><>::
+::res://SPRITES/ExperimentZ #11/::1749703627
+Attack1.png::CompressedTexture2D::1403939319142745107::1724598699::1749703627::1::::<><>::
+Attack2.png::CompressedTexture2D::6399445632668038716::1724598715::1749703627::1::::<><>::
+Death.png::CompressedTexture2D::4807353647392956608::1724598729::1749703627::1::::<><>::
+Idle.png::CompressedTexture2D::6975626212246399738::1724598668::1749703627::1::::<><>::
+Move.png::CompressedTexture2D::7203945379406952238::1724598684::1749703627::1::::<><>::
+Separated Layer.png::CompressedTexture2D::8861117524197577715::1724810913::1749703627::1::::<><>::
+::res://SPRITES/ExperimentZ #15/::1749706167
+attack.png::CompressedTexture2D::7873887337707434785::1749706103::1749706104::1::::<><>::
+death.png::CompressedTexture2D::6332197904324610561::1749706165::1749706167::1::::<><>::
+idle.png::CompressedTexture2D::6577148908163310468::1749705281::1749705284::1::::<><>::
+move.png::CompressedTexture2D::1276318568425948307::1729246031::1749703627::1::::<><>::
+Separated Layer.png::CompressedTexture2D::6568589429699945011::1729246422::1749703627::1::::<><>::
 ::res://SPRITES/Sprt/::1747751066
 candleA_01.png::CompressedTexture2D::3554457329699871808::1586100601::1747750840::1::::<><>::
 candleA_02.png::CompressedTexture2D::2293095092688533661::1586100600::1747750840::1::::<><>::
@@ -78,3 +245,12 @@ R Slash.png::CompressedTexture2D::9114952611521658591::1745493659::1745493669::1
 04 Stranded - Pack 4 back up-Roll Up.png::CompressedTexture2D::8901066088893674659::1745493659::1745493668::1::::<><>::
 04 Stranded - Pack 4 back up-Run UP.png::CompressedTexture2D::1932389534754030794::1745493659::1745493668::1::::<><>::
 attack slash up.png::CompressedTexture2D::9189779811064379688::1745493659::1745493668::1::::<><>::
+::res://tests/::1749928652
+enemy_2.gd::GDScript::-1::1749917422::0::1::::<>CharacterBody2D<>::
+::res://tests/integration/::1749929174
+player.tscn::PackedScene::1610691000174959064::1749929174::0::1::::<><>::res://scene/player/player.gd<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
+test_combat_interaction.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
+test_combat_interaction_scene.tscn::PackedScene::6420901750969913750::1749929174::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn
+::res://tests/unit/::1749928934
+test_enemy_logic.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
+test_player_logic.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
