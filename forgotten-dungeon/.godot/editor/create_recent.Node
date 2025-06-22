@@ -1,3 +1,9 @@
+Button
+HBoxContainer
+VBoxContainer
+Label
+Panel
+CanvasLayer
 Node
 CollisionPolygon2D
 Area2D
@@ -6,9 +12,3 @@ AnimatedSprite2D
 NavigationLink2D
 NavigationAgent2D
 CharacterBody2D
-ProgressBar
-MarginContainer
-CanvasLayer
-Button
-Bone2D
-VBoxContainer

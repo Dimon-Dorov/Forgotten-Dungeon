@@ -1,11 +1,10 @@
 class_name Player
 extends CharacterBody2D
 
-@onready var animated_sprite_2d = $AnimatedSprite2D
-@export var ui: CanvasLayer
-@onready var collision_shape = $CollisionShape2D
-@onready var death_menu = get_node("../DeathMenu")
+var stats: PlayerStats
 
+@onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var collision_shape = $CollisionShape2D
 @onready var up_attack1 = $up_attack1
 @onready var up_attack2 = $up_attack2
 @onready var down_attack1 = $down_attack1
@@ -15,103 +14,97 @@ extends CharacterBody2D
 @onready var right_attack1 = $right_attack1
 @onready var right_attack2 = $right_attack2
 
-var walk_speed = 45
-var sprint_speed = 85
-var acceleration = 0.1
+@export var ui: CanvasLayer
+@onready var death_menu = get_node("../DeathMenu") 
 
+var acceleration = 0.1
 var attack_step = 1
 var is_attacking = false
 var last_direction = Vector2.DOWN
-
-var max_health = 100
-var health = max_health
-
-var max_stamina = 100
-var stamina = max_stamina
-var stamina_recovery_rate = 10
-var stamina_drain_rate = 15
-var attack_stamina_cost = 10
-var stamina_recovery_delay = 1.5
-var time_since_last_stamina_use = 0
+var time_since_last_stamina_use = 0.0
 var is_recovering_stamina = false
-
 var is_dead = false
 
-func _process(delta):
+func initialize(player_stats: PlayerStats):
+	stats = player_stats
+	if ui and stats:
+		stats.stats_changed.connect(_on_stats_changed)
+		_on_stats_changed()
+
+func _on_stats_changed():
 	if ui:
-		ui.update_stamina(stamina, max_stamina)
-		ui.update_health(health, max_health)
-
-	if is_attacking:
+		ui.update_stamina(stats.current_stamina, stats.max_stamina)
+		ui.update_health(stats.current_health, stats.max_health)
+	
+func _physics_process(delta):
+	if is_dead or is_attacking:
+		move_and_slide()
 		return
-
-	var direction = movement_vector().normalized()
-	var is_sprinting = Input.is_action_pressed("sprint") and stamina > 0
-
+	if not stats: return
+	var direction = movement_vector()
+	var is_sprinting = Input.is_action_pressed("sprint") and stats.current_stamina > 0
 	if is_sprinting and direction.length() > 0:
-		stamina -= stamina_drain_rate * delta
-		stamina = max(stamina, 0)
-		time_since_last_stamina_use = 0
+		stats.current_stamina -= 15.0 * delta
+		time_since_last_stamina_use = 0.0
 		is_recovering_stamina = false
 	else:
 		time_since_last_stamina_use += delta
-		if time_since_last_stamina_use >= stamina_recovery_delay:
+		if time_since_last_stamina_use >= 1.5:
 			is_recovering_stamina = true
-
-	if is_recovering_stamina and stamina < max_stamina:
-		stamina += stamina_recovery_rate * delta
-		stamina = min(stamina, max_stamina)
-
-	if Input.is_action_just_pressed("attack") and stamina >= attack_stamina_cost:
-		stamina -= attack_stamina_cost
-		time_since_last_stamina_use = 0
+	if is_recovering_stamina and stats.current_stamina < stats.max_stamina:
+		stats.current_stamina += 10.0 * delta
+	if Input.is_action_just_pressed("attack") and stats.current_stamina >= 10.0:
+		stats.current_stamina -= 10.0
+		time_since_last_stamina_use = 0.0
 		is_recovering_stamina = false
 		play_next_attack()
 		return
+	var current_walk_speed = stats.BASE_WALK_SPEED * stats.move_speed_multiplier
+	var current_sprint_speed = stats.BASE_SPRINT_SPEED * stats.move_speed_multiplier
+	var speed = current_sprint_speed if is_sprinting else current_walk_speed
+	velocity = velocity.lerp(direction.normalized() * speed, acceleration)
+	move_and_slide()
+	update_animation(direction.normalized(), is_sprinting)
 
-	var speed = sprint_speed if is_sprinting else walk_speed
-	var target_velocity = direction * speed
-	
-	if direction.length() > 0:
-		last_direction = direction
-		velocity = velocity.lerp(target_velocity, acceleration)
-		move_and_slide()
-		
-		if abs(direction.x) > abs(direction.y):
-			if direction.x > 0:
-				animated_sprite_2d.play("right_sprint" if is_sprinting else "right_run")
-			else:
-				animated_sprite_2d.play("left_sprint" if is_sprinting else "left_run")
-		else:
-			if direction.y > 0:
-				animated_sprite_2d.play("down_sprint" if is_sprinting else "down_run")
-			else:
-				animated_sprite_2d.play("up_sprint" if is_sprinting else "up_run")
-	else:
-		velocity = Vector2.ZERO
-		move_and_slide()
-		match_direction_idle(last_direction)
+func get_hit(raw_damage: float):
+	if is_dead: return
+	if stats:
+		stats.take_damage(raw_damage)
+	if stats and stats.current_health <= 0:
+		die()
+
+func die():
+	if is_dead: return
+	is_dead = true
+	velocity = Vector2.ZERO
+	animated_sprite_2d.play("death")
+	collision_shape.call_deferred("set_disabled", true)
+	set_physics_process(false)
+
+func _on_attack_area_body_entered(body):
+	if body.is_in_group("enemies"):
+		var damage_info = DamageCalculator.CalculateOutgoingDamage(stats.attack_power, stats.crit_chance, stats.crit_damage_multiplier)
+		var damage_to_deal = damage_info.Damage
+		if damage_info.IsCrit:
+			print("CRITICAL HIT!")
+		if body.has_method("take_damage"):
+			body.take_damage(damage_to_deal)
 
 func movement_vector():
-	return Vector2(
-		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
-		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
-	)
+	return Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
 func play_next_attack():
 	is_attacking = true
 	velocity = Vector2.ZERO
-
 	var attack_node
 	var dir = last_direction
 	var dir_name := ""
-
 	if abs(dir.x) > abs(dir.y):
 		dir_name = "right" if dir.x > 0 else "left"
 	else:
 		dir_name = "down" if dir.y > 0 else "up"
-
-	match dir_name + "_attack" + str(attack_step):
+	var attack_name = dir_name + "_attack" + str(attack_step)
+	match attack_name:
 		"up_attack1": attack_node = up_attack1
 		"up_attack2": attack_node = up_attack2
 		"down_attack1": attack_node = down_attack1
@@ -120,44 +113,37 @@ func play_next_attack():
 		"left_attack2": attack_node = left_attack2
 		"right_attack1": attack_node = right_attack1
 		"right_attack2": attack_node = right_attack2
-
-	animated_sprite_2d.play(dir_name + "_attack" + str(attack_step))
+	animated_sprite_2d.play(attack_name)
 	if attack_node:
-		attack_node.visible = true
 		attack_node.monitoring = true
-
 	attack_step += 1
 	if attack_step > 2:
 		attack_step = 1
 
+func update_animation(direction: Vector2, is_sprinting: bool):
+	if direction.length() > 0:
+		last_direction = direction
+		var anim_prefix: String
+		if abs(direction.x) > abs(direction.y):
+			anim_prefix = "right" if direction.x > 0 else "left"
+		else:
+			anim_prefix = "down" if direction.y > 0 else "up"
+		animated_sprite_2d.play(anim_prefix + ("_sprint" if is_sprinting else "_run"))
+	else:
+		match_direction_idle(last_direction)
+
+func match_direction_idle(direction: Vector2):
+	var anim_prefix: String
+	if abs(direction.x) > abs(direction.y):
+		anim_prefix = "right" if direction.x > 0 else "left"
+	else:
+		anim_prefix = "down" if direction.y > 0 else "up"
+	animated_sprite_2d.play(anim_prefix + "_idle")
+
 func disable_all_attacks():
 	for child in get_children():
 		if child is Area2D and "attack" in child.name:
-			child.visible = false
 			child.monitoring = false
-
-func match_direction_idle(direction):
-	if abs(direction.x) > abs(direction.y):
-		animated_sprite_2d.play("right_idle" if direction.x > 0 else "left_idle")
-	else:
-		animated_sprite_2d.play("down_idle" if direction.y > 0 else "up_idle")
-
-func take_damage(amount: int):
-	health -= amount
-	health = max(health, 0)
-	print("Player takes damage: ", amount, ", current health: ", health) # Додано для дебагу
-	if ui:
-		ui.update_health(health, max_health)
-	if health <= 0:
-		die()
-
-func die():
-	velocity = Vector2.ZERO
-	animated_sprite_2d.play("death")
-	collision_shape.call_deferred("set_disabled", true)
-	set_process(false)
-	set_physics_process(false)
-	is_dead = true
 
 func _on_animated_sprite_2d_animation_finished():
 	if is_attacking:
@@ -165,35 +151,3 @@ func _on_animated_sprite_2d_animation_finished():
 		disable_all_attacks()
 	if is_dead and animated_sprite_2d.animation == "death":
 		death_menu.show_menu()
-
-func _on_down_attack_1_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_down_attack_2_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_up_attack_1_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_up_attack_2_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_right_attack_1_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_right_attack_2_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_left_attack_1_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)
-
-func _on_left_attack_2_body_entered(body):
-	if body.is_in_group("enemies"):
-		body.take_damage(20)

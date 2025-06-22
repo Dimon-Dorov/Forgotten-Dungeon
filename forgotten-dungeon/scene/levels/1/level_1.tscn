@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://ikio7iswml8n"]
+[gd_scene load_steps=13 format=4 uid="uid://ikio7iswml8n"]
 
 [ext_resource type="TileSet" uid="uid://dhe536c41w35f" path="res://resources/tile_set_1.tres" id="1_kc3g1"]
 [ext_resource type="Script" path="res://scene/levels/1/level_1.gd" id="1_ohj0d"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cespx8ns4gmjw" path="res://scene/ui/paus_menu.tscn" id="2_lsuwd"]
 [ext_resource type="PackedScene" uid="uid://n7bmpalpao52" path="res://scene/player/player.tscn" id="2_rxqlw"]
 [ext_resource type="PackedScene" uid="uid://0kkpe4listhm" path="res://scene/enemies/enemy_2/enemy_2.tscn" id="3_bolw5"]
+[ext_resource type="PackedScene" uid="uid://beb6hvmqa4lhi" path="res://scene/ui/UpgradeMenu.tscn" id="4_kwgjq"]
 [ext_resource type="PackedScene" uid="uid://drbyq4ib0v6io" path="res://scene/ui/death_menu.tscn" id="8_7sjmq"]
 [ext_resource type="PackedScene" uid="uid://b0qg2e8fcr1ib" path="res://scene/ui/canvas_layer.tscn" id="8_gn1cp"]
 [ext_resource type="PackedScene" uid="uid://qd1ggf1sibl8" path="res://scene/enemies/enemy_3/enemy_3.tscn" id="9_6rr0s"]
@@ -22,6 +23,9 @@ script = ExtResource("1_ohj0d")
 [node name="DeathMenu" parent="." instance=ExtResource("8_7sjmq")]
 
 [node name="PausMenu" parent="." instance=ExtResource("2_lsuwd")]
+
+[node name="UpgradeMenu" parent="." instance=ExtResource("4_kwgjq")]
+process_mode = 2
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_2jtto")

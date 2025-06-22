@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8EJg3uhu6eP4n9zgsZNQtUrksEZvOABixKLohaSdcSOpBGY0EI3UuKHk5WBChUONsKCcbZrZLB9Hv94Xd+j1jg==",
+  "success": true,
+  "projectFilePath": "D:\\Project_GoDot\\forgotten-dungeon\\Forgotten-Dungeon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ALEX\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "C:\\Users\\ALEX\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\ALEX\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.27\\microsoft.netcore.app.runtime.win-x64.6.0.27.nupkg.sha512",
+    "C:\\Users\\ALEX\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.27\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.27.nupkg.sha512",
+    "C:\\Users\\ALEX\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.27\\microsoft.aspnetcore.app.runtime.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

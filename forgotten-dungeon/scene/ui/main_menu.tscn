@@ -34,6 +34,19 @@ text = "Почати нову гру"
 layout_mode = 2
 text = "Вийти з гри"
 
+[node name="Label" type="Label" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -110.5
+offset_top = -23.0
+offset_right = 110.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Розробник: Доровских Д.О."
+
 [connection signal="pressed" from="Panel/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

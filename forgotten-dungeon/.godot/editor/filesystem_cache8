@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749942280
-export_presets.cfg::TextFile::-1::1749709434::0::1::::<><>::
+::res://::1750620836
+export_presets.cfg::TextFile::-1::1750024516::0::1::::<><>::
 icon.svg::CompressedTexture2D::3294575677383607341::1737558611::1745493545::1::::<><>::
 ::res://addons/::1749897473
 ::res://addons/gut/::1749897489
@@ -124,44 +124,49 @@ Script.svg::CompressedTexture2D::4817060143842260657::1749585524::1749897489::1:
 yellow.png::CompressedTexture2D::1043265824178416429::1749585524::1749897489::1::::<><>::
 ::res://assets/::1745493545
 0x72_DungeonTilesetII_v1.7.png::CompressedTexture2D::808024321796548962::1738963031::1745493545::1::::<><>::
-::res://resources/::1749917538
-tile_set_1.tres::TileSet::7660714612240833377::1749917538::0::1::::<><>::uid://u1qjx6uua3ww::::res://SPRITES/dungeontileset-extended.png
-::res://scene/::1749665386
+::res://resources/::1750610179
+tile_set_1.tres::TileSet::7660714612240833377::1750610179::0::1::::<><>::uid://u1qjx6uua3ww::::res://SPRITES/dungeontileset-extended.png
+::res://scene/::1750603595
+::res://scene/damage_calc/::1750610179
+DamageCalculator.cs::CSharpScript::-1::1750610179::0::1::::<>Node<>::
 ::res://scene/enemies/::1749684129
-::res://scene/enemies/enemy_1/::1749929174
-enemy_1.gd::GDScript::-1::1749703359::0::1::::<>CharacterBody2D<>::
-enemy_1.tscn::PackedScene::5630067489175559056::1749929174::0::1::::<><>::res://scene/enemies/enemy_1/enemy_1.gd<>uid://dimcwxdq1fug3::::res://SPRITES/ExperimentZ #1/K4095/Attack.png<>uid://blbq2co05y5sq::::res://SPRITES/ExperimentZ #1/K4095/Idle.png<>uid://iko2hpd2nb7i::::res://SPRITES/ExperimentZ #1/K4095/Move.png<>uid://cmwjgl2lg0atb::::res://SPRITES/ExperimentZ #1/K4095/Death.png
-::res://scene/enemies/enemy_2/::1749929174
-enemy_2.gd::GDScript::-1::1749703391::0::1::::<>CharacterBody2D<>::
-enemy_2.tscn::PackedScene::1775999080731584118::1749929174::0::1::::<><>::uid://dpeo6w7lf4hya::::res://SPRITES/ExperimentZ #1/Q3417/Attack.png<>res://scene/enemies/enemy_2/enemy_2.gd<>uid://qouw007ytp65::::res://SPRITES/ExperimentZ #1/Q3417/Death.png<>uid://bjbhbjnh1oxa6::::res://SPRITES/ExperimentZ #1/Q3417/Idle.png<>uid://tk1diwdvrutx::::res://SPRITES/ExperimentZ #1/Q3417/Move.png
-::res://scene/enemies/enemy_3/::1749929174
-enemy_3.gd::GDScript::-1::1749708472::0::1::::<>CharacterBody2D<>::
-enemy_3.tscn::PackedScene::1130804312115868923::1749929174::0::1::::<><>::uid://b17ajhhvs23jt::::res://SPRITES/ExperimentZ #4/001/Attack 1.png<>uid://c03vb1anclxmc::::res://SPRITES/ExperimentZ #4/001/Idle.png<>res://scene/enemies/enemy_3/enemy_3.gd<>uid://b6tqexjkln68k::::res://SPRITES/ExperimentZ #4/001/Attack 2.png<>uid://dhb7dhtuhqmld::::res://SPRITES/ExperimentZ #4/001/Attack 3.png<>uid://bqtvexvgre2yt::::res://SPRITES/ExperimentZ #4/001/Death.png<>uid://bcdgr8yv4wytb::::res://SPRITES/ExperimentZ #4/001/Walk.png
-::res://scene/enemies/enemy_4/::1749929174
-enemy_4.gd::GDScript::-1::1749708862::0::1::::<>CharacterBody2D<>::
-enemy_4.tscn::PackedScene::1625868921001961566::1749929174::0::1::::<><>::res://scene/enemies/enemy_4/enemy_4.gd<>uid://dkgf1k204f3rx::::res://SPRITES/ExperimentZ #15/attack.png<>uid://cwhmmy0aca5bh::::res://SPRITES/ExperimentZ #15/death.png<>uid://c0yaxf58gt445::::res://SPRITES/ExperimentZ #15/idle.png<>uid://sgi1sc4el2dj::::res://SPRITES/ExperimentZ #15/move.png
-::res://scene/enemies/enemy_5/::1749929174
+::res://scene/enemies/enemy_1/::1750610534
+enemy_1.gd::GDScript::-1::1750608806::0::1::::<>CharacterBody2D<>::
+enemy_1.tscn::PackedScene::5630067489175559056::1750610534::0::1::::<><>::res://scene/enemies/enemy_1/enemy_1.gd<>uid://dimcwxdq1fug3::::res://SPRITES/ExperimentZ #1/K4095/Attack.png<>uid://blbq2co05y5sq::::res://SPRITES/ExperimentZ #1/K4095/Idle.png<>uid://iko2hpd2nb7i::::res://SPRITES/ExperimentZ #1/K4095/Move.png<>uid://cmwjgl2lg0atb::::res://SPRITES/ExperimentZ #1/K4095/Death.png
+::res://scene/enemies/enemy_2/::1750610534
+enemy_2.gd::GDScript::-1::1750608806::0::1::::<>CharacterBody2D<>::
+enemy_2.tscn::PackedScene::1775999080731584118::1750610534::0::1::::<><>::uid://dpeo6w7lf4hya::::res://SPRITES/ExperimentZ #1/Q3417/Attack.png<>res://scene/enemies/enemy_2/enemy_2.gd<>uid://qouw007ytp65::::res://SPRITES/ExperimentZ #1/Q3417/Death.png<>uid://bjbhbjnh1oxa6::::res://SPRITES/ExperimentZ #1/Q3417/Idle.png<>uid://tk1diwdvrutx::::res://SPRITES/ExperimentZ #1/Q3417/Move.png
+::res://scene/enemies/enemy_3/::1750610534
+enemy_3.gd::GDScript::-1::1750608806::0::1::::<>CharacterBody2D<>::
+enemy_3.tscn::PackedScene::1130804312115868923::1750610534::0::1::::<><>::uid://b17ajhhvs23jt::::res://SPRITES/ExperimentZ #4/001/Attack 1.png<>uid://c03vb1anclxmc::::res://SPRITES/ExperimentZ #4/001/Idle.png<>res://scene/enemies/enemy_3/enemy_3.gd<>uid://b6tqexjkln68k::::res://SPRITES/ExperimentZ #4/001/Attack 2.png<>uid://dhb7dhtuhqmld::::res://SPRITES/ExperimentZ #4/001/Attack 3.png<>uid://bqtvexvgre2yt::::res://SPRITES/ExperimentZ #4/001/Death.png<>uid://bcdgr8yv4wytb::::res://SPRITES/ExperimentZ #4/001/Walk.png
+::res://scene/enemies/enemy_4/::1750610535
+enemy_4.gd::GDScript::-1::1750608806::0::1::::<>CharacterBody2D<>::
+enemy_4.tscn::PackedScene::1625868921001961566::1750610535::0::1::::<><>::res://scene/enemies/enemy_4/enemy_4.gd<>uid://dkgf1k204f3rx::::res://SPRITES/ExperimentZ #15/attack.png<>uid://cwhmmy0aca5bh::::res://SPRITES/ExperimentZ #15/death.png<>uid://c0yaxf58gt445::::res://SPRITES/ExperimentZ #15/idle.png<>uid://sgi1sc4el2dj::::res://SPRITES/ExperimentZ #15/move.png
+::res://scene/enemies/enemy_5/::1749946139
 enemy_5.gd::GDScript::-1::1749687252::0::1::::<>CharacterBody2D<>::
-enemy_5.tscn::PackedScene::5329349635282561849::1749929174::0::1::::<><>::res://scene/enemies/enemy_5/enemy_5.gd
+enemy_5.tscn::PackedScene::5329349635282561849::1749946139::0::1::::<><>::res://scene/enemies/enemy_5/enemy_5.gd
 ::res://scene/levels/::1749665468
-::res://scene/levels/1/::1749929174
-level_1.gd::GDScript::-1::1749893052::0::1::::<>Node<>::
-level_1.tscn::PackedScene::582666957655019547::1749929174::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>res://scene/levels/1/level_1.gd<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://cespx8ns4gmjw::::res://scene/ui/paus_menu.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://drbyq4ib0v6io::::res://scene/ui/death_menu.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn<>uid://qd1ggf1sibl8::::res://scene/enemies/enemy_3/enemy_3.tscn<>uid://xft3acii6omw::::res://scene/enemies/enemy_4/enemy_4.tscn
-::res://scene/objects/::1748005730
-candle.tscn::PackedScene::7952547704362720753::1748005730::0::1::::<><>::uid://61nqa7da76om::::res://SPRITES/Sprt/Sprite-0002.png
-::res://scene/player/::1749929174
-player.gd::GDScript::-1::1749918639::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::978597990314063135::1749929174::0::1::::<><>::res://scene/player/player.gd<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
-::res://scene/ui/::1749929174
+::res://scene/levels/1/::1750610534
+level_1.gd::GDScript::-1::1750604791::0::1::::<>Node<>::
+level_1.tscn::PackedScene::582666957655019547::1750610534::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>res://scene/levels/1/level_1.gd<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://cespx8ns4gmjw::::res://scene/ui/paus_menu.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://beb6hvmqa4lhi::::res://scene/ui/UpgradeMenu.tscn<>uid://drbyq4ib0v6io::::res://scene/ui/death_menu.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn<>uid://qd1ggf1sibl8::::res://scene/enemies/enemy_3/enemy_3.tscn<>uid://xft3acii6omw::::res://scene/enemies/enemy_4/enemy_4.tscn
+::res://scene/player/::1750610534
+GameManager.gd::GDScript::-1::1750603676::0::1::::<>Node<>::
+player.gd::GDScript::-1::1750608806::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::978597990314063135::1750610534::0::1::::<><>::res://scene/player/player.gd<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
+PlayerStats.gd::GDScript::-1::1750603676::0::1::::PlayerStats<>Resource<>::
+SaveManager.gd::GDScript::-1::1750603744::0::1::::<>Node<>::
+::res://scene/ui/::1750610535
 canvas_layer.gd::GDScript::-1::1746115720::0::1::::<>CanvasLayer<>::
 canvas_layer.tscn::PackedScene::4174584598403392641::1749920142::0::1::::<><>::res://scene/ui/canvas_layer.gd
 death_menu.gd::GDScript::-1::1749708800::0::1::::<>CanvasLayer<>::
-death_menu.tscn::PackedScene::8356024086824081778::1749929174::0::1::::<><>::res://scene/ui/death_menu.gd
+death_menu.tscn::PackedScene::8356024086824081778::1750610535::0::1::::<><>::res://scene/ui/death_menu.gd
 experience_bar.tscn::PackedScene::8843809016819921683::1749708524::0::1::::<><>::
-main_menu.gd::GDScript::-1::1749669504::0::1::::<>CanvasLayer<>::
-main_menu.tscn::PackedScene::8832391259009418722::1749708524::0::1::::<><>::res://scene/ui/main_menu.gd
+main_menu.gd::GDScript::-1::1750604030::0::1::::<>CanvasLayer<>::
+main_menu.tscn::PackedScene::8832391259009418722::1750610535::0::1::::<><>::res://scene/ui/main_menu.gd
 paus_menu.gd::GDScript::-1::1747964313::0::1::::<>CanvasLayer<>::
-paus_menu.tscn::PackedScene::5091709123872570744::1749929174::0::1::::<><>::res://scene/ui/paus_menu.gd
+paus_menu.tscn::PackedScene::5091709123872570744::1749942286::0::1::::<><>::res://scene/ui/paus_menu.gd
+UpgradeMenu.tscn::PackedScene::2671136285588510602::1750610535::0::1::::<><>::res://scene/ui/upgrade_menu.gd
+upgrade_menu.gd::GDScript::-1::1750610331::0::1::::<>CanvasLayer<>::
 ::res://SPRITES/::1749703623
 dungeontileset-extended.png::CompressedTexture2D::1458439495257067890::1747229919::1747229962::1::::<><>::
 ::res://SPRITES/ExperimentZ #1/::1746132249
@@ -247,10 +252,10 @@ R Slash.png::CompressedTexture2D::9114952611521658591::1745493659::1745493669::1
 attack slash up.png::CompressedTexture2D::9189779811064379688::1745493659::1745493668::1::::<><>::
 ::res://tests/::1749928652
 enemy_2.gd::GDScript::-1::1749917422::0::1::::<>CharacterBody2D<>::
-::res://tests/integration/::1749929174
-player.tscn::PackedScene::1610691000174959064::1749929174::0::1::::<><>::res://scene/player/player.gd<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
+::res://tests/integration/::1749942286
+player.tscn::PackedScene::1610691000174959064::1749942286::0::1::::<><>::res://scene/player/player.gd<>uid://8iofjok2ni07::::res://SPRITES/With Sword/04 Stranded - Pack 4 back up-Death.png<>uid://c8w2b1hdh2koy::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Chop Down.png<>uid://criyfv6j3divs::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Slash Down.png<>uid://cl7qdnd2yxlg5::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Idle Down.png<>uid://c4bxvh8mcrps7::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Move Down.png<>uid://2r52rsluyt0c::::res://SPRITES/With Sword/Down/04 Stranded - Pack 4 back up-Run Down.png<>uid://tyf07qh3n36b::::res://SPRITES/With Sword/Right Left/R CHop — копия.png<>uid://d114r530c4hd1::::res://SPRITES/With Sword/Right Left/R Slash — копия.png<>uid://hh3s3x00b3wg::::res://SPRITES/With Sword/Right Left/Idle left right — копия.png<>uid://drk0k6nup5lfe::::res://SPRITES/With Sword/Right Left/R move — копия.png<>uid://bwxfpp6icvvvn::::res://SPRITES/With Sword/Right Left/R Run — копия.png<>uid://bwljgcq7iwrot::::res://SPRITES/With Sword/Right Left/R CHop.png<>uid://d24l65dkug1h0::::res://SPRITES/With Sword/Right Left/R Slash.png<>uid://b758gw82sqn0y::::res://SPRITES/With Sword/Right Left/Idle left right.png<>uid://vim2yo6uvwqj::::res://SPRITES/With Sword/Right Left/R move.png<>uid://ctrrhguoxpeco::::res://SPRITES/With Sword/Right Left/R Run.png<>uid://bk1hnmqrig0f7::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Chop Up.png<>uid://d36uliprsscei::::res://SPRITES/With Sword/Up/attack slash up.png<>uid://mn6nocbc134l::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Idle Up.png<>uid://dd8vh13l1chpq::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Move Up.png<>uid://2scf5l30b1pm::::res://SPRITES/With Sword/Up/04 Stranded - Pack 4 back up-Run UP.png
 test_combat_interaction.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
-test_combat_interaction_scene.tscn::PackedScene::6420901750969913750::1749929174::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn
-::res://tests/unit/::1749928934
+test_combat_interaction_scene.tscn::PackedScene::6420901750969913750::1749942286::0::1::::<><>::uid://dhe536c41w35f::::res://resources/tile_set_1.tres<>uid://cmhinhwu0j57a::::res://scene/enemies/enemy_1/enemy_1.tscn<>uid://0kkpe4listhm::::res://scene/enemies/enemy_2/enemy_2.tscn<>uid://n7bmpalpao52::::res://scene/player/player.tscn<>uid://b0qg2e8fcr1ib::::res://scene/ui/canvas_layer.tscn
+::res://tests/unit/::1749942286
 test_enemy_logic.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
-test_player_logic.gd::GDScript::-1::1749928934::0::1::::<>GutTest<>::
+test_player_logic.gd::GDScript::-1::1749942285::0::1::::<>GutTest<>::

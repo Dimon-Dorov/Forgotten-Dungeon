@@ -6,17 +6,19 @@ extends CanvasLayer
 
 func _ready():
 	hide()
+	continue_button.pressed.connect(_on_continue_pressed)
+	restart_button.pressed.connect(_on_restart_pressed)
+	exit_button.pressed.connect(_on_exit_pressed)
 
 func show_menu():
-	get_tree().paused = true
 	show()
 
 func hide_menu():
-	get_tree().paused = false
 	hide()
 
 func _on_continue_pressed():
-	hide_menu()
+	hide()
+	get_tree().call_group("level_manager", "on_menu_closed")
 
 func _on_restart_pressed():
 	get_tree().paused = false

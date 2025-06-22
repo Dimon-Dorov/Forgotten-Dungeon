@@ -12,6 +12,7 @@ extends CharacterBody2D
 @onready var patrol_area = $Area2D/CollisionShape2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 
+var xp_value = 100.0
 var player_detected = false
 var spawn_position = Vector2.ZERO
 var patrol_target = Vector2.ZERO
@@ -25,7 +26,7 @@ var patrol_pause_timer = 0.0
 var is_patrol_paused = false
 var has_engaged = false
 
-var max_health = 70
+var max_health = 85
 var health = max_health
 var is_dead = false
 var was_close_to_player = false
@@ -97,12 +98,12 @@ func chase(delta):
 	if player == null:
 		return
 	var dist = global_position.distance_to(player.global_position)
-	if dist <= 50:
+	if dist <= 70:
 		was_close_to_player = true
-	if dist <= 50 and can_attack:
+	if dist <= 70 and can_attack:
 		state = "attacking"
 		attack_player()
-	elif dist <= 50 and !can_attack:
+	elif dist <= 70 and !can_attack:
 		velocity = Vector2.ZERO
 	else:
 		if nav_agent.target_position != player.global_position:
@@ -169,6 +170,8 @@ func take_damage(amount: int):
 	state = "chasing"
 
 func die():
+	if is_instance_valid(player) and player.stats != null:
+		player.stats.add_xp(xp_value)
 	is_dead = true
 	animated_sprite.play("death")
 	detection_area.monitoring = false
@@ -240,15 +243,15 @@ func _on_detection_area_body_exited(body):
 
 func _on_attack_1_body_entered(body):
 	if current_attack_type == "attack_1" and body.is_in_group("player"):
-		body.take_damage(10)
+		body.get_hit(10)
 
 func _on_attack_2_body_entered(body):
 	if current_attack_type == "attack_2" and body.is_in_group("player"):
-		body.take_damage(15)
+		body.get_hit(15)
 
 func _on_attack_3_body_entered(body):
 	if current_attack_type == "attack_3" and body.is_in_group("player"):
-		body.take_damage(20)
+		body.get_hit(20)
 
 func _on_animated_sprite_2d_animation_finished():
 	if is_dead and animated_sprite.animation == "death":

@@ -11,6 +11,7 @@ extends CharacterBody2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 @onready var spawn_position = global_position
 
+var xp_value = 50.0
 var patrol_target = Vector2.ZERO
 var move_speed = 40
 var charge_speed = 180
@@ -23,7 +24,7 @@ var patrol_pause_timer = 0.0
 var is_patrol_paused = false
 var has_engaged = false
 
-var max_health = 50
+var max_health = 60
 var health = max_health
 var is_dead = false
 var was_close_to_player = false
@@ -125,6 +126,8 @@ func take_damage(amount: int):
 	state = "chasing"
 
 func die():
+	if is_instance_valid(player) and player.stats != null:
+		player.stats.add_xp(xp_value)
 	is_dead = true
 	animated_sprite.play("death")
 	detection_area.monitoring = false
@@ -309,8 +312,8 @@ func _on_animated_sprite_frame_changed():
 
 func _on_attack_area_body_entered(body):
 	if body.is_in_group("player"):
-		body.take_damage(10)
+		body.get_hit(10)
 
 func _on_charge_attack_area_body_entered(body):
 	if body.is_in_group("player"):
-		body.take_damage(25)
+		body.get_hit(25)

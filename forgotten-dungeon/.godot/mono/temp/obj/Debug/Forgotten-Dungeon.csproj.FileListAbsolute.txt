@@ -1,0 +1,17 @@
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\Forgotten-Dungeon.deps.json
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\Forgotten-Dungeon.runtimeconfig.json
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\Forgotten-Dungeon.dll
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\Forgotten-Dungeon.pdb
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.csproj.AssemblyReference.cache
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.AssemblyInfoInputs.cache
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.AssemblyInfo.cs
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.csproj.CoreCompileInputs.cache
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotte.5654935C.Up2Date
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.dll
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\refint\Forgotten-Dungeon.dll
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.pdb
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\Forgotten-Dungeon.genruntimeconfig.cache
+D:\Project_GoDot\forgotten-dungeon\.godot\mono\temp\obj\Debug\ref\Forgotten-Dungeon.dll

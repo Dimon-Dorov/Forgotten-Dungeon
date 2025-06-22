@@ -8,6 +8,7 @@ extends CharacterBody2D
 @onready var patrol_area = $Area2D/CollisionShape2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 
+var xp_value = 300.0
 var player_detected = false
 var spawn_position = Vector2.ZERO
 var patrol_target = Vector2.ZERO
@@ -21,7 +22,7 @@ var patrol_pause_timer = 0.0
 var is_patrol_paused = false
 var has_engaged = false
 
-var max_health = 100
+var max_health = 150
 var health = max_health
 var is_dead = false
 var was_close_to_player = false
@@ -152,6 +153,8 @@ func take_damage(amount: int):
 	state = "chasing"
 
 func die():
+	if is_instance_valid(player) and player.stats != null:
+		player.stats.add_xp(xp_value)
 	is_dead = true
 	animated_sprite.play("death")
 	detection_area.monitoring = false
@@ -219,7 +222,7 @@ func _on_detection_area_body_exited(body):
 
 func _on_attack_area_body_entered(body):
 	if body.is_in_group("player"):
-		body.take_damage(40)
+		body.get_hit(40)
 
 func _on_animated_sprite_2d_animation_finished():
 	if is_dead and animated_sprite.animation == "death":
